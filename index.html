@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/css/index.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.theme.default.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital@1&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Shippori+Mincho+B1:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<script>
+  jQuery(document).ready(function ($) {
+    var owl = $("#carousel1");
+    owl.owlCarousel({
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: true,
+      items: 3,
+      loop: true,
+      center: false,
+      rewind: false,
+      mouseDrag: true,
+      touchDrag: true,
+      pullDrag: true,
+      freeDrag: false,
+      margin: 0,
+      stagePadding: 0,
+      merge: false,
+      mergeFit: true,
+      autoWidth: false,
+      startPosition: 0,
+      rtl: false,
+      smartSpeed: 2000,
+      fluidSpeed: false,
+      dragEndSpeed: false,
+      responsive: {
+        0: {
+          items: 1
+          // nav: true
+        },
+        480: {
+          items: 1,
+          nav: false
+        },
+        768: {
+          items: 3,
+          // nav: true,
+          loop: true
+        },
+        992: {
+          items: 3,
+          // nav: true,
+          loop: true
+        },
+        1200: {
+          items: 3,
+          loop: true
+        }
+      },
+      responsiveRefreshRate: 1000,
+      responsiveBaseElement: window,
+      fallbackEasing: "swing",
+      info: false,
+      nestedItemSelector: false,
+      itemElement: "div",
+      stageElement: "div",
+      refreshClass: "owl-refresh",
+      loadedClass: "owl-loaded",
+      loadingClass: "owl-loading",
+      rtlClass: "owl-rtl",
+      responsiveClass: "owl-responsive",
+      dragClass: "owl-drag",
+      itemClass: "owl-item",
+      stageClass: "owl-stage",
+      stageOuterClass: "owl-stage-outer",
+      grabClass: "owl-grab",
+      autoHeight: false,
+      lazyLoad: false
+    });
+
+    $(".next").click(function () {
+      owl.trigger("owl.next");
+    });
+    $(".prev").click(function () {
+      owl.trigger("owl.prev");
+    });
+  });
+</script>
+<script>
+  jQuery(document).ready(function ($) {
+    var owl = $("#carousel2");
+    owl.owlCarousel({
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: true,
+      items: 3,
+      loop: true,
+      center: false,
+      rewind: false,
+      mouseDrag: true,
+      touchDrag: true,
+      pullDrag: true,
+      freeDrag: false,
+      margin: 0,
+      stagePadding: 0,
+      merge: false,
+      mergeFit: true,
+      autoWidth: false,
+      startPosition: 0,
+      rtl: false,
+      smartSpeed: 2000,
+      fluidSpeed: false,
+      dragEndSpeed: false,
+      responsive: {
+        0: {
+          items: 1
+          // nav: true
+        },
+        480: {
+          items: 1,
+          nav: false
+        },
+        768: {
+          items: 3,
+          // nav: true,
+          loop: true
+        },
+        992: {
+          items: 3,
+          // nav: true,
+          loop: true
+        },
+        1200: {
+          items: 3,
+          loop: true
+        }
+      },
+      responsiveRefreshRate: 1000,
+      responsiveBaseElement: window,
+      fallbackEasing: "swing",
+      info: false,
+      nestedItemSelector: false,
+      itemElement: "div",
+      stageElement: "div",
+      refreshClass: "owl-refresh",
+      loadedClass: "owl-loaded",
+      loadingClass: "owl-loading",
+      rtlClass: "owl-rtl",
+      responsiveClass: "owl-responsive",
+      dragClass: "owl-drag",
+      itemClass: "owl-item",
+      stageClass: "owl-stage",
+      stageOuterClass: "owl-stage-outer",
+      grabClass: "owl-grab",
+      autoHeight: false,
+      lazyLoad: false
+    });
+
+    $(".next").click(function () {
+      owl.trigger("owl.next");
+    });
+    $(".prev").click(function () {
+      owl.trigger("owl.prev");
+    });
+  });
+</script>
+<script>
+  jQuery(document).ready(function ($) {
+    var owl = $("#carousel3");
+    owl.owlCarousel({
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: true,
+      items: 3,
+      loop: true,
+      center: false,
+      rewind: false,
+      mouseDrag: true,
+      touchDrag: true,
+      pullDrag: true,
+      freeDrag: false,
+      margin: 0,
+      stagePadding: 0,
+      merge: false,
+      mergeFit: true,
+      autoWidth: false,
+      startPosition: 0,
+      rtl: false,
+      smartSpeed: 2000,
+      fluidSpeed: false,
+      dragEndSpeed: false,
+      responsive: {
+        0: {
+          items: 1
+          // nav: true
+        },
+        480: {
+          items: 1,
+          nav: false
+        },
+        768: {
+          items: 3,
+          // nav: true,
+          loop: true
+        },
+        992: {
+          items: 3,
+          // nav: true,
+          loop: true
+        },
+        1200: {
+          items: 3,
+          loop: true
+        }
+      },
+      responsiveRefreshRate: 1000,
+      responsiveBaseElement: window,
+      fallbackEasing: "swing",
+      info: false,
+      nestedItemSelector: false,
+      itemElement: "div",
+      stageElement: "div",
+      refreshClass: "owl-refresh",
+      loadedClass: "owl-loaded",
+      loadingClass: "owl-loading",
+      rtlClass: "owl-rtl",
+      responsiveClass: "owl-responsive",
+      dragClass: "owl-drag",
+      itemClass: "owl-item",
+      stageClass: "owl-stage",
+      stageOuterClass: "owl-stage-outer",
+      grabClass: "owl-grab",
+      autoHeight: false,
+      lazyLoad: false
+    });
+
+    $(".next").click(function () {
+      owl.trigger("owl.next");
+    });
+    $(".prev").click(function () {
+      owl.trigger("owl.prev");
+    });
+  });
+</script>
+
+<body>
+  <div class="wrapper">
+    <div class="ifing-beauty text-center">
+      <p>購入ページへ</p>
+      <p><i class="fa-solid fa-cart-shopping"></i></p>
+    </div>
+    <div class="social-network">
+      <ul>
+        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="https://page.line.me/?accountId=425wswjh"><i class="fa-brands fa-line"></i></a></li>
+        <li><a href="https://www.instagram.com/ifing_beauty/?igshid=YmMyMTA2M2Y%3D"><i class="fa-brands fa-instagram"></i></a></li>
+      </ul>
+    </div>
+    <div class="top">
+      <div class="img-area">
+        <h2>ケラチンたちよ、インカラミせよ！ </h2>
+        <img src="assets/images/tokio-ie-inkarami.png" class="img-fluid">
+      </div>
+    </div>
+    <div class="top-text">
+      <div class="inner">
+        <div class="container">
+          <div class="word w1">全国の美容室からの支持率No1</div>
+          <div class="word w2">カリスマ美容師支持率No1</div>
+          <div class="word w5">圧倒的なケア力No1</div>
+        </div>
+      </div>
+    </div>
+    <div class="top-carousel">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="8000">
+            <img src="assets/images/wideshot.jpg" class="d-block w-100 carousel-img" alt="...">
+            <div class="carousel-caption d-block">
+              <h5>TOKIO INKARAMI PLATINUM</h5>
+              <p>税込9,719円</p>
+              <a href="#" class="btn btn-primary">購入する</a>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="assets/images/tokioinkarami.jpg" class="d-block w-100 carousel-img" alt="...">
+            <div class="carousel-caption d-block">
+              <h5>TOKIO INKARAMI PLATINUM</h5>
+              <p>税込9,719円</p>
+              <a href="#" class="btn btn-primary">購入する</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/tokioinkarami.png" class="d-block w-100 carousel-img" alt="...">
+            <div class="carousel-caption d-block">
+              <h5>TOKIO INKARAMI PLATINUM</h5>
+              <p>税込9,719円</p>
+              <a href="#" class="btn btn-primary">購入する</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/ayumu.png" class="d-block w-100 carousel-img" alt="...">
+            <div class="carousel-caption d-block">
+              <h5>平野選手</h5>
+              <p><a href="https://ifing.com">記事を読む</a></p>
+              <a href="#" class="btn btn-primary">動画を見る</a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="main">
+
+
+      <div class="sect01">
+        <video muted loop autoplay>
+          <source src="assets/video/video.mp4" type="video/mp4">
+        </video>
+        <div class="home-content">
+          <h1>TOKIO INKARAMI</h1>
+          <p>久しぶりに<br>
+            ダンボールを引っ張りだしてきた
+          </p>
+          <p>「拾って下さい」って<br>
+            書いてある ダンボール</p>
+          <p>あぁ<br>
+            またこの箱に<br>
+            お世話になるのか</p>
+          <p>痛む心を引きずって<br>
+            ダンボールの中に入る </p>
+          <p>どうしたら<br>
+            拾ってもらえるのかな</p>
+        </div>
+      </div>
+      <div class="sect02">
+        <div class="sect02-inner1">
+          <h3><span>そもそも<ruby>INKARAMI<rt>インカラミ</rt></ruby>って何？</span></h3>
+
+          <div class="my-5">
+            <p class="text-center">４ステップで髪の内部からキューティクルまでしっかり補修。<br>
+              髪質やダメージの悩みを解決する為には毛髪内部の補修が必要です。<br>
+              TOKIOインカラミは、髪の毛の70％を占めるケラチンに着目し、<br>
+              補修の方法を変えました。</p>
+          </div>
+        </div>
+        <div class="sect02-inner2">
+          <div class="my-5">
+            <h3 class="mb-5">毛髪強度回復140％</h3>
+            <p>特許技術インカラミの効果によって、毛髪強度が大幅にアップ<br>
+              粉々に折れた骨がつながるように<br>
+              毛髪内部に芯ができてしなやかな髪に生まれ変わります。</p>
+          </div>
+          <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-8 offset-sm-2">
+            <img src="assets/images/graph.svg" alt="" class="img-fluid">
+            <img src="assets/images/certified-inkarami.svg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="sect03">
+        <h2 class="text-center"><ruby>Platinum<rt>プラチナム</rt></ruby>、
+          <ruby>Premium<rt>プレミアム</rt></ruby>、
+          <ruby>Head<rt>ヘッド</rt></ruby> <ruby>SPA<rt>スパ</rt></ruby>
+          <br>比較
+        </h2>
+        <div class="platinum-premium-headspa row">
+          <div class="col-lg-4 col-md-4">
+            <img src="assets/images/premium-set.png" alt="TOKIO IE プラチナム Platinum" class="img-fluid">
+            <div class="text my-4">
+              <h3 class="text-center premium"><span><ruby>Premium<rt>プレミアム</rt></ruby></span></h3>
+              <p class="description text-center">広がりを抑えて保湿！<br>
+                まとまりにくい髪もしっとり補修タイプ<br>
+                ラベンダー＆フルーティフローラルでリラックス</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <img src="assets/images/platinum-set.png" alt="TOKIO IE プラチナム Platinum" class="img-fluid">
+            <div class="text my-4">
+              <h3 class="text-center platinum"><span><ruby>Platinum<rt>プラチナム</rt></ruby></span></h3>
+              <p class="description text-center">どんな髪質もさらさらに！<br>
+                抜群の洗い心地でバランス良く補修タイプ<br>
+                レモングラスの香りでリフレッシュ</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <img src="assets/images/headspa-set.png" alt="TOKIO IE プラチナム Platinum" class="img-fluid">
+            <div class="text my-4">
+              <h3 class="text-center headspa"><span><ruby>Head<rt>ヘッド</rt></ruby> <ruby>SPA<rt>スパ</rt></ruby></span></h3>
+              <p class="description text-center">頭皮＆髪のダブルケア！<br>
+                低刺激成分でスッキリ補修タイプ<br>
+                レモングラスの香りでリフレッシュ</p>
+            </div>
+          </div>
+        </div>
+        <div class="comparison col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-10 offset-sm-1">
+
+          <h4><span>良くある質問</span></h4>
+
+          <h6>Q. プラチナムシリーズ・プレミアムシリーズ・ヘッドスパシリーズの違いを教えてください。</h6>
+
+          <p><span>ダントツ一番人気</span>の<strong>プラチナムシリーズ</strong>は、髪のダメージをケアしながらふんわり・柔らかい髪質に整えて、しっとり・さらさらに仕上げます。
+            シャンプー・トリートメントともに髪と同じ成分を使用しているので、洗うたびに健康な状態に近づけてくれます。特にシルクのようしなやかな指通りで、軽いのにしっとりまとまる仕上がり感が好評です。レモングラスの香りでバスタイムのリフレッシュ効果を促します。どれを使うか悩んだときはこちらのプラチナムシリーズをオススメします。
+          </p>
+
+          <p><strong>プレミアムシリーズ</strong>は、よりしっとりさせたい方や髪のおさまりを良くしたい方にオススメのシリーズです。
+            シルクとコラーゲン成分で髪を洗うリッチなシャンプーで、しっとり艶やかな洗い上がりを楽しんで頂けます。もっちりとした泡としっとりトリートメントで乾燥が気になる髪を整えます。香りはリラックス効果のあるラベンダーを使用しています。
+          </p>
+
+          <p><strong>ヘッドスパシリーズ</strong>は、低刺激のシャンプーで優しく洗いながら、保湿によって頭皮と髪のコンディションを整えて、根元から立ち上がる健康的な髪に近づけます。
+            トリートメントは頭皮に直接塗布ができるので、頭皮をほぐすように優しくもみこんでから髪全体に馴染ませるとより効果的です。香りはリフレッシュ効果のあるレモングラスを使用しています。</p>
+
+          <p>ご愛用頂いている方には、<span>プレミアムシャンプーとプラチナムトリートメントの組み合わせ</span>で、しっとり洗ってサラサラな指通りを楽しまれるお客様もおられます。</p>
+
+        </div>
+      </div>
+    </div>
+    <div class="products">
+      <div class="container">
+        <h2>定期</h2>
+        <p class="subtitle"><span>プラチナム・プレミアム・ヘッドスパの定期お得セット！</span></p>
+        
+        <div class="col-lg-5 col-md-8 col-sm-8 my-4 subscription-bargain px-4 py-3">
+          <h4>定期お届けコースなら、5％オフ！</h4>
+          <p class="m-0"><strong>初回特典あり</strong><br>
+          <span>
+            *毎回トラベルセット付き<br>
+            * 大人気の洗い流さないトリートメントプレゼント！
+          </span>  
+          </p>
+        </div>
+
+        
+        
+        <div class="subscription-purchase">
+          <div class="individual-purchase" id="subscription">
+            <div id="carousel1" class="owl-one owl-carousel owl-theme">
+
+              <div v-for="item in items">
+                <a v-bind:href="item.ifingUrl" style="text-decoration:none; ">
+                  <div class="product item">
+
+                    <div class="img">
+                      <h4>{{item.productNameJP}}</h4>
+                      <img :src="item.imageSource" :alt="item.productNameJP" class="img-fluid">
+                      <!-- <h3>{{item.productNameENG}}</h3> -->
+
+                    </div>
+                    <h6><span>サイズ:</span> {{item.size}}ml</h6>
+                    <p class="price"><strong>{{item.noTaxPrice}}</strong>円</p>
+                    <p class="with-tax">(税込<span>{{Math.round(item.noTaxPrice*1.1)}}</span>円)</p>
+
+                  </div>
+                </a>
+              </div>
+
+            </div><!-- #carousel -->
+          </div>
+
+        </div>
+
+        <div class="subscription-bottom-text mt-2">
+          <ul>
+            <li>毎回送料無料は、定期お届けコース・セット商品に限ります。</li>
+            <li>900レフィルをご注文のお客様は専用ボトルケースもお付けします。</li>
+            <li>初回特典は、定期お届けコースのセット商品をご購入頂いた方のみとなっております。</li>
+          </ul> 
+        </div>
+      </div>
+    </div>
+
+    <div class="products">
+      <div class="container">
+        <h2>トライアルセット</h2>
+        <p class="subtitle"><span>TOKIOブランドを利用するの初めて！ちょっと試してみたい！</span></p>
+        <div class="trial-purchase" id="trial">
+          <div id="carousel3" class="owl-two owl-carousel owl-theme">
+
+            <div v-for="item in items">
+              <a v-bind:href="item.ifingUrl" style="text-decoration:none;">
+                <div class="product item">
+
+                  <div class="img">
+                    <h4>{{item.productNameJP}}</h4>
+                    <img :src="item.imageSource" :alt="item.productNameJP" class="img-fluid">
+                    <!-- <h3>{{item.productNameENG}}</h3> -->
+
+                  </div>
+
+                  <!-- <h4>{{item.productNameJP}}</h4> -->
+                  <h6><span>サイズ:</span> {{item.size}}ml</h6>
+                  <p class="price"><strong>{{item.noTaxPrice}}</strong>円</p>
+                  <p class="with-tax">(税込<span>{{Math.round(item.noTaxPrice*1.1)}}</span>円)</p>
+
+                </div>
+              </a>
+            </div>
+
+          </div><!-- #carousel -->
+        </div>
+      </div>
+    </div>
+
+
+    <div class="products">
+      <div class="container">
+        <h2>単体</h2>
+        <p class="subtitle"><span>一旦、単体で購入して利用してみたい！</span></p>
+        <div class="individual-purchase" id="sunway">
+          <div id="carousel2" class="owl-two owl-carousel owl-theme">
+
+            <div v-for="item in items">
+              <a v-bind:href="item.ifingUrl" style="text-decoration:none;">
+                <div class="product item">
+
+                  <div class="img">
+                    <h4>{{item.productNameJP}}</h4>
+                    <img :src="item.imageSource" :alt="item.productNameJP" class="img-fluid">
+                    <!-- <h3>{{item.productNameENG}}</h3> -->
+
+                  </div>
+
+                  <!-- <h4>{{item.productNameJP}}</h4> -->
+                  <h6><span>サイズ:</span> {{item.size}}ml</h6>
+                  <p class="price"><strong>{{item.noTaxPrice}}</strong>円</p>
+                  <p class="with-tax">(税込<span>{{Math.round(item.noTaxPrice*1.1)}}</span>円)</p>
+
+                </div>
+              </a>
+            </div>
+
+          </div><!-- #carousel -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.0/jquery-migrate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+<script>
+  var vm = new Vue({
+    el: '#sunway',
+    data: {
+      items: [
+        { productNameJP: 'PLATINUM', size: '240', noTaxPrice: '3400', imageSource: 'assets/images/img33.png', ifingUrl: 'https://ifing-beauty.com/products/detail/47' },
+        { productNameJP: 'PLATINUM', size: '150', noTaxPrice: '3200', imageSource: 'assets/images/img33.png', ifingUrl: 'https://ifing-beauty.com/products/detail/49' },
+        { productNameJP: 'PLATINUM', size: '100', noTaxPrice: '3800', imageSource: 'assets/images/img33.png', ifingUrl: 'https://ifing-beauty.com/products/detail/51' },
+        { productNameJP: 'PREMIUM', size: '240', noTaxPrice: '3400', imageSource: 'assets/images/img33.png', ifingUrl: 'https://ifing-beauty.com/products/detail/47' },
+        { productNameJP: 'PREMIUM', size: '150', noTaxPrice: '3200', imageSource: 'assets/images/img33.png', ifingUrl: 'https://ifing-beauty.com/products/detail/49' },
+        { productNameJP: 'PREMIUM', size: '100', noTaxPrice: '3800', imageSource: 'assets/images/img33.png', ifingUrl: 'https://ifing-beauty.com/products/detail/51' },
+      ]
+    }
+  });
+</script>
+<script>
+  var vm = new Vue({
+    el: '#subscription',
+    data: {
+      items: [
+        { productNameJP: 'PLATINUM', size: '240', noTaxPrice: '3400', imageSource: 'assets/images/img33.png', ifingUrl: 'https://ifing-beauty.com/products/detail/47' },
+        { productNameJP: 'PLATINUM', size: '150', noTaxPrice: '3200', imageSource: 'assets/images/img33.png', ifingUrl: 'https://ifing-beauty.com/products/detail/49' },
+        { productNameJP: 'PLATINUM', size: '100', noTaxPrice: '3800', imageSource: 'assets/images/img33.png', ifingUrl: 'https://ifing-beauty.com/products/detail/51' },
+      ]
+    }
+  });
+</script>
+<script>
+  var vm = new Vue({
+    el: '#trial',
+    data: {
+      items: [
+        { productNameJP: 'PLATINUM', size: '240', noTaxPrice: '3400', imageSource: 'assets/images/products/platinum_trial01.png', ifingUrl: 'https://ifing-beauty.com/products/detail/47' },
+        { productNameJP: 'PLATINUM', size: '150', noTaxPrice: '3200', imageSource: 'assets/images/products/platinum_trial02.png', ifingUrl: 'https://ifing-beauty.com/products/detail/49' },
+        { productNameJP: 'PREMIUM', size: '100', noTaxPrice: '3800', imageSource: 'assets/images/products/premium_trial01.png', ifingUrl: 'https://ifing-beauty.com/products/detail/51' },
+        { productNameJP: 'PREMIUM', size: '100', noTaxPrice: '3800', imageSource: 'assets/images/products/premium_trial02.png', ifingUrl: 'https://ifing-beauty.com/products/detail/51' },
+        { productNameJP: 'HEAD SPA', size: '100', noTaxPrice: '3800', imageSource: 'assets/images/products/headspa_trial01.png', ifingUrl: 'https://ifing-beauty.com/products/detail/51' },
+      ]
+    }
+  });
+</script>
+
+</html>
