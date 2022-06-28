@@ -343,7 +343,6 @@ body {
   font-size: 1em;
   color: #fff;
   z-index: 999;
-  transform: rotate(-30deg);
   padding: 2px 5px;
   background: #323232;
 }
