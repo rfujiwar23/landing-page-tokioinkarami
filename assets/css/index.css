@@ -269,7 +269,10 @@ body {
   font-size: 0.8em;
 }
 .sect03 .comparison {
-  padding: 8vh 0;
+  padding: 4vh 2vw;
+  background: #eae6e6;
+  border-radius: 20px;
+  box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.45);
 }
 .sect03 .comparison h4 {
   text-align: center;
@@ -303,7 +306,9 @@ body {
   padding: 3px 10px;
 }
 .products .subscription-bargain {
-  background: #f8dbdb;
+  background: #eae6e6;
+  border: 2px solid #fff;
+  box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.45);
 }
 .products .subscription-bargain h4 {
   color: #a31111;
@@ -368,6 +373,12 @@ body {
 }
 .products .subscription-purchase .item p.with-tax span, .products .individual-purchase .item p.with-tax span, .products .trial-purchase .item p.with-tax span {
   font-size: 1.5em;
+}
+
+@media screen and (max-width: 576px) {
+  .sect03 .comparison {
+    padding: 0 20px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

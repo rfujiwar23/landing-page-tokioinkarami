@@ -267,10 +267,12 @@
 
 <body>
   <div class="wrapper">
-    <div class="ifing-beauty text-center">
-      <p>購入ページへ</p>
-      <p><i class="fa-solid fa-cart-shopping"></i></p>
-    </div>
+    <a href="https://ifing-beauty.com">
+      <div class="ifing-beauty text-center">
+        <p>購入ページへ</p>
+        <p><i class="fa-solid fa-cart-shopping"></i></p>
+      </div>
+    </a>
     <div class="social-network">
       <ul>
         <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
@@ -376,7 +378,7 @@
         <div class="sect02-inner1">
           <h3><span>そもそも<ruby>INKARAMI<rt>インカラミ</rt></ruby>って何？</span></h3>
 
-          <div class="my-5">
+          <div class="my-3">
             <p class="text-center">４ステップで髪の内部からキューティクルまでしっかり補修。<br>
               髪質やダメージの悩みを解決する為には毛髪内部の補修が必要です。<br>
               TOKIOインカラミは、髪の毛の70％を占めるケラチンに着目し、<br>
@@ -385,7 +387,15 @@
         </div>
         <div class="sect02-inner2">
           <div class="my-5">
-            <h3 class="mb-5">毛髪強度回復140％</h3>
+            <h3>特許技術インカラミ</h3>
+            <div class="my-3">
+              <p>美しい髪に必要不可欠なケラチンは、ダメージで壊れると二度と再生できません。<br>
+                この壊れたケラチンを業界初の特許技術で新しく形成し、補修力を最大化します。</p>
+            </div>
+            
+          </div>
+          <div class="my-5">
+            <h3 class="my-3">毛髪強度回復140％</h3>
             <p>特許技術インカラミの効果によって、毛髪強度が大幅にアップ<br>
               粉々に折れた骨がつながるように<br>
               毛髪内部に芯ができてしなやかな髪に生まれ変わります。</p>
@@ -544,7 +554,7 @@
       <div class="container">
         <h2>単体</h2>
         <p class="subtitle"><span>一旦、単体で購入して利用してみたい！</span></p>
-        <div class="individual-purchase" id="sunway">
+        <!-- <div class="individual-purchase" id="sunway">
           <div id="carousel2" class="owl-two owl-carousel owl-theme">
 
             <div v-for="item in items">
@@ -554,11 +564,7 @@
                   <div class="img">
                     <h4>{{item.productNameJP}}</h4>
                     <img :src="item.imageSource" :alt="item.productNameJP" class="img-fluid">
-                    <!-- <h3>{{item.productNameENG}}</h3> -->
-
                   </div>
-
-                  <!-- <h4>{{item.productNameJP}}</h4> -->
                   <h6><span>サイズ:</span> {{item.size}}ml</h6>
                   <p class="price"><strong>{{item.noTaxPrice}}</strong>円</p>
                   <p class="with-tax">(税込<span>{{Math.round(item.noTaxPrice*1.1)}}</span>円)</p>
@@ -567,8 +573,9 @@
               </a>
             </div>
 
-          </div><!-- #carousel -->
-        </div>
+          </div>
+        </div> -->
+        <a href="https://ifing-beauty.com/products/list?category_id=7">公式サイトで購入</a>
       </div>
     </div>
   </div>
@@ -598,9 +605,12 @@
     el: '#subscription',
     data: {
       items: [
-        { productNameJP: 'PLATINUM', size: '240', noTaxPrice: '3400', imageSource: 'assets/images/img33.png', ifingUrl: 'https://ifing-beauty.com/products/detail/47' },
-        { productNameJP: 'PLATINUM', size: '150', noTaxPrice: '3200', imageSource: 'assets/images/img33.png', ifingUrl: 'https://ifing-beauty.com/products/detail/49' },
-        { productNameJP: 'PLATINUM', size: '100', noTaxPrice: '3800', imageSource: 'assets/images/img33.png', ifingUrl: 'https://ifing-beauty.com/products/detail/51' },
+        { productNameJP: 'PLATINUM', size: '500', noTaxPrice: '3400', imageSource: 'assets/images/products/sub500-platinum.png', ifingUrl: 'https://ifing-beauty.com/products/detail/47' },
+        { productNameJP: 'PLATINUM', size: '900', noTaxPrice: '3200', imageSource: 'assets/images/products/sub900-platinum.png', ifingUrl: 'https://ifing-beauty.com/products/detail/49' },
+        { productNameJP: 'PREMIUM', size: '500', noTaxPrice: '3800', imageSource: 'assets/images/products/sub500-premium.png', ifingUrl: 'https://ifing-beauty.com/products/detail/51' },
+        { productNameJP: 'PREMIUM', size: '900', noTaxPrice: '3800', imageSource: 'assets/images/products/sub900-premium.png', ifingUrl: 'https://ifing-beauty.com/products/detail/51' },
+        { productNameJP: 'HEAD SPA', size: '500', noTaxPrice: '3800', imageSource: 'assets/images/products/sub500-headspa.png', ifingUrl: 'https://ifing-beauty.com/products/detail/51' },
+        { productNameJP: 'HEAD SPA', size: '900', noTaxPrice: '3800', imageSource: 'assets/images/products/sub900-headspa.png', ifingUrl: 'https://ifing-beauty.com/products/detail/51' },
       ]
     }
   });
