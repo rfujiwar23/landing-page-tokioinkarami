@@ -331,6 +331,7 @@ body {
   content: "*";
   padding: 0 3px;
   color: #a31111;
+  font-weight: bold;
 }
 .products .subscription-purchase .item, .products .individual-purchase .item, .products .trial-purchase .item {
   background: #e0e0e0;
