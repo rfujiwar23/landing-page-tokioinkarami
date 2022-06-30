@@ -9,7 +9,7 @@ body {
 	// height: 100%;
 	padding: 0;
 	margin: 0;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Noto Sans JP', sans-serif;
 }
 
 
@@ -264,11 +264,71 @@ background: linear-gradient(0deg, rgba(231,231,231,1) 0%, rgba(245,248,252,1) 10
 	.sect02-inner2 {
 		line-height: 2em;
 		text-align: center;
+		.arrow {
+			i {
+				font-size: 2em;
+			}
+		}
+		.substance {
+			.text {
+				width:96%;
+				margin:0 auto;
+				padding:5px;
+				box-shadow: 1px 3px 6px rgba(50,50,50,0.44);
+				background: rgb(255,255,255);
+background: linear-gradient(128deg, rgba(255,255,255,1) 33%, rgba(255,233,233,1) 66%, rgba(255,208,208,1) 100%);
+				position:relative;
+				h4 {
+					background:#d3d3d3;
+					padding:5px 0;
+					span {
+						color:#a31111;
+						padding:0 3px;
+					}
+				}
+				h5 {
+					position: absolute;
+					bottom:1%;
+					right:1%;
+					font-size: 0.6em;
+					color:#a31111;
+					&:before {
+						content: '*';
+						padding:0 2px;
+						color:#a31111;
+					}
+				}
+			}
+		}
 	}
 }
 .sect03 {
 	background: #fff;
-
+	h2 {
+		line-height: 2em;
+		span.platinum {
+			background:rgb(169,178,187);
+			padding:10px;
+			rt {
+				font-size: 10px;
+			}
+		}
+		span.premium {
+			background:rgb(187,191,125);
+			padding:10px;
+			rt {
+				font-size: 10px;
+			}
+		}
+		span.head-spa {
+			background:rgb(90, 93, 129);
+			color:#fff;
+			padding:10px;
+			rt {
+				font-size: 10px;
+			}
+		}
+	}
 	padding: 4vh 2vw;
 	.platinum-premium-headspa {
 		margin:8vh auto;
@@ -497,6 +557,12 @@ background: linear-gradient(0deg, rgba(231,231,231,1) 0%, rgba(245,248,252,1) 10
 
 .about-subscription {
 	padding:8vh 0;
+	h4 {
+		span {
+			font-size: 1.25em;
+			color:#a31111;
+		}
+	}
 	.policy {
 		color:rgb(24, 21, 21);
 		h3 {

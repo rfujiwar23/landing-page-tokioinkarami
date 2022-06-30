@@ -9,7 +9,7 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 .owl-theme .owl-dots .owl-dot {
@@ -235,10 +235,67 @@ body {
   line-height: 2em;
   text-align: center;
 }
+.sect02 .sect02-inner2 .arrow i {
+  font-size: 2em;
+}
+.sect02 .sect02-inner2 .substance .text {
+  width: 96%;
+  margin: 0 auto;
+  padding: 5px;
+  box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.44);
+  background: white;
+  background: linear-gradient(128deg, white 33%, #ffe9e9 66%, #ffd0d0 100%);
+  position: relative;
+}
+.sect02 .sect02-inner2 .substance .text h4 {
+  background: #d3d3d3;
+  padding: 5px 0;
+}
+.sect02 .sect02-inner2 .substance .text h4 span {
+  color: #a31111;
+  padding: 0 3px;
+}
+.sect02 .sect02-inner2 .substance .text h5 {
+  position: absolute;
+  bottom: 1%;
+  right: 1%;
+  font-size: 0.6em;
+  color: #a31111;
+}
+.sect02 .sect02-inner2 .substance .text h5:before {
+  content: "*";
+  padding: 0 2px;
+  color: #a31111;
+}
 
 .sect03 {
   background: #fff;
   padding: 4vh 2vw;
+}
+.sect03 h2 {
+  line-height: 2em;
+}
+.sect03 h2 span.platinum {
+  background: #a9b2bb;
+  padding: 10px;
+}
+.sect03 h2 span.platinum rt {
+  font-size: 10px;
+}
+.sect03 h2 span.premium {
+  background: #bbbf7d;
+  padding: 10px;
+}
+.sect03 h2 span.premium rt {
+  font-size: 10px;
+}
+.sect03 h2 span.head-spa {
+  background: #5a5d81;
+  color: #fff;
+  padding: 10px;
+}
+.sect03 h2 span.head-spa rt {
+  font-size: 10px;
 }
 .sect03 .platinum-premium-headspa {
   margin: 8vh auto;
@@ -443,6 +500,10 @@ body {
 
 .about-subscription {
   padding: 8vh 0;
+}
+.about-subscription h4 span {
+  font-size: 1.25em;
+  color: #a31111;
 }
 .about-subscription .policy {
   color: #181515;
