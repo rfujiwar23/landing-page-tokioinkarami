@@ -14,6 +14,8 @@ body {
 
 
 
+
+
 .owl-theme .owl-dots .owl-dot {
     display: inline-block;
     zoom: 1;
@@ -43,8 +45,12 @@ body {
 	bottom:2%;
 	right:2%;
 	z-index: 999;
-	padding:10px 20px;
+	padding:3px 5px;
 	background:rgba(50,50,50,0.45);
+	* {
+		margin:0;
+		padding:0;
+	}
 	ul {
 		list-style-type: none;
 		padding:0;
@@ -52,14 +58,15 @@ body {
 			display: inline-block;
 			padding:5px 5px;
 			a {
-				border:2px dashed rgb(255,255,255);
-				padding:5px 8px;
-				border-radius: 50%;
+				// border:2px dashed rgb(255,255,255);
+				// padding:5px 8px;
+				// border-radius: 50%;
 				color:rgb(255,255,255);
+				font-size: 1.5em;
 			}
 			a:hover, a:active {
 				color:rgb(204, 202, 71);
-				border:2px dashed rgb(204, 202, 71);
+				// border:2px dashed rgb(204, 202, 71);
 				font-weight: bold;
 			}
 		}
@@ -248,7 +255,7 @@ background: linear-gradient(0deg, rgba(231,231,231,1) 0%, rgba(245,248,252,1) 10
 		// padding-top: 150px;
 		color: #fff;
 		text-align: center;
-        overflow: scroll;
+        overflow-y: scroll;
         height: 75vh;
 	}
 	p {
