@@ -12,8 +12,25 @@ body {
 	font-family: 'Noto Sans JP', sans-serif;
 }
 
+.br_iphone12 {
+	display:none;
+}
 
+.br_768 {
+	display: none;
+}
 
+.br_500px {
+	display:none;
+}
+
+.br_iphoneXR {
+	display:none;
+}
+
+.br_iphoneSE {
+	display:none;
+}
 
 
 .owl-theme .owl-dots .owl-dot {
@@ -259,8 +276,9 @@ background: linear-gradient(0deg, rgba(231,231,231,1) 0%, rgba(245,248,252,1) 10
         height: 75vh;
 	}
 	p {
-		font-size: clamp(25px, 4vw, 40px);
+		// font-size: clamp(25px, 4vw, 40px);
 		margin-top: 10px;
+		font-size: 1.5em;
 	}
 }
 
@@ -286,6 +304,7 @@ background: linear-gradient(0deg, rgba(231,231,231,1) 0%, rgba(245,248,252,1) 10
 			}
 		}
 		.substance {
+			margin:2vh auto;
 			.text {
 				width:96%;
 				margin:0 auto;
@@ -699,10 +718,133 @@ background: linear-gradient(128deg, rgba(255,255,255,1) 33%, rgba(255,233,233,1)
 	}
 }
 
+.bottom-footer {
+	* {
+		padding: 0;
+		margin:0;
+	}
+	padding:3vh 0;
+	ul {
+		// float:right;
+		padding:0;
+		li {
+			display: inline-block;
+			margin:0 3px;
+			a {
+				font-size: 0.8em;
+				color:#000;
+			}
+		}
+	}
+	p {
+		font-size: 0.8em;
+	}
+}
+
+@media screen and (max-width:768px) {
+	.br_768 {
+		display: block;
+	}
+	
+	.sect02 {
+		.sect02-inner2 {
+			.substance {
+				.text {
+					h4 {
+						font-size: 0.9em;
+					}
+				}
+			}
+		}
+	}
+	.sect03 {
+		.platinum-premium-headspa {
+			.description {
+				font-size: 0.7em;
+			}
+		}
+		h2 {
+			span.platinum, span.premium, span.head-spa {
+				padding:20px 10px;
+			}
+		}
+	}
+}
+
+
 @media screen and (max-width:576px) {
 	.sect03 {
 		.comparison {
-			padding:0 20px;
+			padding:3vh 20px;
 		}
+	}
+}
+
+// 500px (pc min-width)
+@media screen and (max-width:500px) {
+	.br_500px {
+		display:block;
+	}
+}
+
+
+@media screen and (max-width:414px) {
+	.br_iphoneXR {
+		display:none;
+	}
+
+	.products {
+		p.subtitle {
+			span {
+				font-size: 0.9em;
+			}
+		}
+	}
+}
+
+// iphone 12 Pro (390px x 844px)
+@media screen and (max-width:390px) {
+
+	.br_iphone12 {
+		display:block;
+	}
+
+}
+
+@media screen and (max-width:375px) {
+	.br_iphoneSE {
+		display:block;
+	}
+
+	.sect02 {
+		.sect02-inner1 {
+			p {
+				font-size: 0.9em;
+			}
+		}
+		.sect02-inner2 {
+			p {
+				font-size: 0.9em;
+			}
+		}
+	}
+	.sect03 {
+		padding:4vw 10px;
+		h2 {
+			font-size: 1.25em;
+		}
+	}
+
+	.products {
+		p.subtitle {
+			font-size: 0.8em;
+			span {
+				padding:3px 5px;
+			}
+		}
+	}
+
+	.top-footer {
+		font-size: 0.9em;
 	}
 }

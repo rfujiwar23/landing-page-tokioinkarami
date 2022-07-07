@@ -12,6 +12,26 @@ body {
   font-family: "Noto Sans JP", sans-serif;
 }
 
+.br_iphone12 {
+  display: none;
+}
+
+.br_768 {
+  display: none;
+}
+
+.br_500px {
+  display: none;
+}
+
+.br_iphoneXR {
+  display: none;
+}
+
+.br_iphoneSE {
+  display: none;
+}
+
 .owl-theme .owl-dots .owl-dot {
   display: inline-block;
   zoom: 1;
@@ -221,8 +241,8 @@ body {
   height: 75vh;
 }
 .sect01 p {
-  font-size: clamp(25px, 4vw, 40px);
   margin-top: 10px;
+  font-size: 1.5em;
 }
 
 .sect02 {
@@ -243,6 +263,9 @@ body {
 }
 .sect02 .sect02-inner2 .arrow i {
   font-size: 2em;
+}
+.sect02 .sect02-inner2 .substance {
+  margin: 2vh auto;
 }
 .sect02 .sect02-inner2 .substance .text {
   width: 96%;
@@ -622,9 +645,96 @@ body {
   line-height: 2em;
 }
 
+.bottom-footer {
+  padding: 3vh 0;
+}
+.bottom-footer * {
+  padding: 0;
+  margin: 0;
+}
+.bottom-footer ul {
+  padding: 0;
+}
+.bottom-footer ul li {
+  display: inline-block;
+  margin: 0 3px;
+}
+.bottom-footer ul li a {
+  font-size: 0.8em;
+  color: #000;
+}
+.bottom-footer p {
+  font-size: 0.8em;
+}
+
+@media screen and (max-width: 768px) {
+  .br_768 {
+    display: block;
+  }
+
+  .sect02 .sect02-inner2 .substance .text h4 {
+    font-size: 0.9em;
+  }
+
+  .sect03 .platinum-premium-headspa .description {
+    font-size: 0.7em;
+  }
+  .sect03 h2 span.platinum, .sect03 h2 span.premium, .sect03 h2 span.head-spa {
+    padding: 20px 10px;
+  }
+}
 @media screen and (max-width: 576px) {
   .sect03 .comparison {
-    padding: 0 20px;
+    padding: 3vh 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .br_500px {
+    display: block;
+  }
+}
+@media screen and (max-width: 414px) {
+  .br_iphoneXR {
+    display: none;
+  }
+
+  .products p.subtitle span {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 390px) {
+  .br_iphone12 {
+    display: block;
+  }
+}
+@media screen and (max-width: 375px) {
+  .br_iphoneSE {
+    display: block;
+  }
+
+  .sect02 .sect02-inner1 p {
+    font-size: 0.9em;
+  }
+  .sect02 .sect02-inner2 p {
+    font-size: 0.9em;
+  }
+
+  .sect03 {
+    padding: 4vw 10px;
+  }
+  .sect03 h2 {
+    font-size: 1.25em;
+  }
+
+  .products p.subtitle {
+    font-size: 0.8em;
+  }
+  .products p.subtitle span {
+    padding: 3px 5px;
+  }
+
+  .top-footer {
+    font-size: 0.9em;
   }
 }
 
